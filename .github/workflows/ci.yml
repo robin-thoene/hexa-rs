@@ -10,3 +10,5 @@ jobs:
         uses: EmbarkStudios/cargo-deny-action@v2
       - name: Check architecture
         run: ./scripts/lint_architecture.sh
+      - name: Build release
+        run: cargo build --release
