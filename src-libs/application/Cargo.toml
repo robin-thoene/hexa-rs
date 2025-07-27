@@ -2,6 +2,7 @@
 name = "application"
 edition = "2024"
 description = "Implement inbound ports, implement business logic"
+publish = false
 version.workspace = true
 authors.workspace = true
 license.workspace = true

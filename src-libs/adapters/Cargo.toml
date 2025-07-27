@@ -2,6 +2,7 @@
 name = "adapters"
 edition = "2024"
 description = "Implement outbound ports, implement inbound adapters to access the application"
+publish = false
 version.workspace = true
 authors.workspace = true
 license.workspace = true
