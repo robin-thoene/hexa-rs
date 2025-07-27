@@ -1,7 +1,7 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  cargo-deny:
+  validate-code:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -10,5 +10,7 @@ jobs:
         uses: EmbarkStudios/cargo-deny-action@v2
       - name: Check architecture
         run: ./scripts/lint_architecture.sh
-      - name: Build release
+      - name: Build
         run: cargo build --release
+      - name: Test
+        run: cargo test
