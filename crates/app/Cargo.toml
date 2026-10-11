@@ -1,8 +1,17 @@
 [package]
-name = "app"             # TODO: use the name of your application
+name = "app"                # TODO: use the name of your application
 edition = "2024"
+description = ""            # TODO: add the description
+publish = false
 version.workspace = true
 authors.workspace = true
 license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "app"         # TODO: use the name of your application binary
+path = "src/main.rs"
 
 [dependencies]
+adapters.workspace = true
+application.workspace = true

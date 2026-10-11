@@ -6,6 +6,10 @@ publish = false
 version.workspace = true
 authors.workspace = true
 license.workspace = true
+repository.workspace = true
+
+[lib]
+name = "ports"
 
 [dependencies]
-domain = { path = "../domain" }
+domain.workspace = true

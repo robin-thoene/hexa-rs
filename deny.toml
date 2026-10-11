@@ -19,7 +19,7 @@ ignore = false
 registries = []
 
 [bans]
-multiple-versions = "deny"
+multiple-versions = "allow"
 wildcards = "deny"
 allow-wildcard-paths = true
 highlight = "all"

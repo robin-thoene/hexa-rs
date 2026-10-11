@@ -6,3 +6,11 @@ members = ["crates/*"]
 version = "0.0.0"
 authors = []      # TODO: add author
 license = "MIT"
+repository = ""   # TODO: add repo url
+
+[workspace.dependencies]
+# Internal
+adapters = { path = "./crates/adapters", package = "adapters", version = "0.0.0" }
+application = { path = "./crates/application", package = "application", version = "0.0.0" }
+domain = { path = "./crates/domain", package = "domain", version = "0.0.0" }
+ports = { path = "./crates/ports", package = "ports", version = "0.0.0" }
